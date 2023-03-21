@@ -12,7 +12,6 @@ from statsmodels.stats.outliers_influence import summary_table
 from statsmodels.sandbox.regression.predstd import wls_prediction_std
 
 
-# har flyttet topppunkt av alle kurver til indeks 351, som er gjennomsnitt av originale topp punkt. Har også flyttet topppunkt til gjennomsnitt Ca til 351 og økt gjennomsnitt Cu med 100 indeks.
 # har gjort de tre rene kurvene indentiske før lager gjennomsnitt
 
 def reader(path):
