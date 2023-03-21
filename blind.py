@@ -23,7 +23,7 @@ def reader(path):
         y[i] = array[i][1]
 
     # n = np.where(y==np.nanmax(y))
-    n = np.where(y[:425]==np.nanmax(y[:425])) #var nødvendig å trikse med indekser for at det skal funke i dette tilfellet.
+    n = np.where(y[:425]==np.nanmax(y[:425])) 
     n = float(n[0])
 
 
@@ -50,7 +50,7 @@ def fit(pure, x, y, sub1, sub2, file): #sub1 = avyCa, sub2 = avyCu
     return a1, a2, r2
 
 def index(N, Y, i, numb):
-    if N[i] > numb: #351 er gjennomsnitt av indeksen til originale topp punkter (i første måling), definerer derfor dette som indeks og bytter alle til dette.
+    if N[i] > numb: 
 
         p = N[i]-numb
         Y[i] = Y[i][int(p):]
